@@ -32,6 +32,11 @@ int main(int argc, const char * argv[]) {
     int ret = (*fn)();
     
     printf("retvalue: %d\n", ret);
+
+    while (1) {
+        // Keep the program running to allow inspection
+        // of the memory region.
+    }
     
     return 0;
 }
